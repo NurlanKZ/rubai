@@ -1,10 +1,10 @@
 var audio = new Audio();
 
-fetch('http://localhost:8000/api/random')
+fetch('http://10.154.0.2:8000/api/random')
     .then(response => response.json())
     .then(id => {
         savedID = id;
-        fetch(`http://localhost:8000/api/poem/${id}`)
+        fetch(`http://10.154.0.2:8000/api/poem/${id}`)
             .then(response => response.json())
             .then(data => {
                 if (data.length==4) {
@@ -18,7 +18,7 @@ fetch('http://localhost:8000/api/random')
         const containerElement = document.getElementById('box');
         containerElement.addEventListener('click', () => {
             if (audio.paused) {
-                audio.src = `http://localhost:8000/api/audio/${id}`;
+                audio.src = `http://10.154.0.2:8000/api/audio/${id}`;
                 audio.play();
             }
         });
