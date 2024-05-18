@@ -1,10 +1,10 @@
 var audio = new Audio();
 
-fetch('http://10.154.0.2:8000/api/random')
+fetch('https://rubai.onrender.com/api/random')
     .then(response => response.json())
     .then(id => {
         savedID = id;
-        fetch(`http://10.154.0.2:8000/api/poem/${id}`)
+        fetch(`https://rubai.onrender.com/api/poem/${id}`)
             .then(response => response.json())
             .then(data => {
                 if (data.length==4) {
@@ -18,7 +18,7 @@ fetch('http://10.154.0.2:8000/api/random')
         const containerElement = document.getElementById('box');
         containerElement.addEventListener('click', () => {
             if (audio.paused) {
-                audio.src = `http://10.154.0.2:8000/api/audio/${id}`;
+                audio.src = `https://rubai.onrender.com/api/audio/${id}`;
                 audio.play();
             }
         });

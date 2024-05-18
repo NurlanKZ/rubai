@@ -28,10 +28,6 @@ body {
     }
 }
 
-#box:hover {
-    background-color: rgba(255, 255, 255, 1);
-}
-
 p {
     margin: 10px;
 }
