@@ -1,0 +1,37 @@
+body {
+    background-image: url("./landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 40px;
+    border-radius: 25px;
+    font-size: x-large;
+
+    @media (max-width: 700px) {
+        font-size: medium;
+    }
+}
+
+#box:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+p {
+    margin: 10px;
+}
