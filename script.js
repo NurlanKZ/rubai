@@ -19,7 +19,8 @@ const containerElement = document.getElementById('box');
                 .then(response => response.json())
                 .then(data => {
                     audio.src = `data:audio/mpeg;base64,${data[0].audio}`;
+                    audio.play();
+                    audio.onended = () => audio.pause();
                 });
-            audio.play();
         }
     });
