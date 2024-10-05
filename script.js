@@ -16,7 +16,6 @@ fetch(`data/${dailyIndex}.json`)
 const containerElement = document.getElementById('box');
     containerElement.addEventListener('click', () => {
         if (audio.paused) {
-            audio.src = `data:audio/mpeg;base64,${data[0].audio}`;
             audio.play();
             audio.onended = () => {
                 audio.currentTime = 0;
