@@ -1,9 +1,9 @@
 var audio = new Audio();
 
-const randomNumber = Math.ceil(Math.random() * 450);
+const dayCount = Math.floor(Date.now()/86400000);
+const dailyIndex = dayCount%450+1;
 
-console.log(randomNumber);
-fetch(`data/${randomNumber}.json`)
+fetch(`data/${dailyIndex}.json`)
     .then(response => response.json())
     .then(data => {
         data[0].poem.map((content,index) => {
