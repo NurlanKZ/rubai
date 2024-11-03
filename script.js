@@ -23,3 +23,6 @@ const containerElement = document.getElementById('box');
             };
         }
     });
+
+fetch(`https://book2anki-llzu.onrender.com/`)
+    .then(response => response.json())
