@@ -2,10 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL=https://book2anki-llzu.onrender.com" />
-    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://book2anki-llzu.onrender.com">click here</a>.</p>
+    <div class="main">
+        <button class="arrow" data-delta="-1">Back</button>
+        <div class="container" id="box">
+            <p id="line-1"></p>
+            <p id="line-2"></p>
+            <p id="line-3"></p>
+            <p id="line-4"></p>
+        </div>
+        <button class="arrow" data-delta="1">Forward</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
