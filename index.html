@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Tab</title>
+    <title>Spinning Wheel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
-        <button class="arrow" data-delta="-1">Back</button>
-        <div class="container" id="box">
-            <p id="line-1"></p>
-            <p id="line-2"></p>
-            <p id="line-3"></p>
-            <p id="line-4"></p>
-        </div>
-        <button class="arrow" data-delta="1">Forward</button>
+    <div class="wrapper">
+        <button id="spin-btn">Spin</button>
+        <div id="result">Today you shall eat at:</div>
+        <div id="triangle"></div>
+        <canvas id="wheel" width="500" height="500"></canvas>
+        
     </div>
     <script src="script.js"></script>
 </body>
